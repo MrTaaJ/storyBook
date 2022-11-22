@@ -1,0 +1,30 @@
+.btnTest {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.primary {
+    background: #714DD9;
+    color: white
+}
+
+.secondary {
+    border: 1px solid #714DD9;
+    color: #714DD9;
+    background: transparent;
+}
+
+.btnTest:disabled {
+    background: lightgrey;
+}

@@ -3,6 +3,7 @@ import Logo from "../../assets/logo.png";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import Button from "../../components/button/ButtonComponent";
+import ButtonTest from "../../components/ButtonTest/ButtonTest";
 
 // import hamburger from "../../assets/hamburger.png";
 
@@ -56,7 +57,15 @@ const Header = () => {
         </div>
         <span className={styles.header_button}>
           <Button link="/login" style={btnStyleOutline} title="Login" />
-          <Button link="/signup" title="Sign up" />
+          <Link to="/signup">
+            <ButtonTest
+                onClick={() => {}}
+                variant="primary"
+                newClass="hover"
+              >
+                SIGN UP
+            </ButtonTest>
+          </Link>
         </span>
       </div>
 
